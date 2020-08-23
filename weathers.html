@@ -1,0 +1,88 @@
+<!-- weathers.html -->
+<!-- Peter Kelly -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" device>
+  <title>Weather App</title>
+  <style media="screen">
+    h4 {
+      font-weight: bold;
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Weather App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html">Login <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="search.html">Weather</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="weathers.html">Guessing Game</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Weather Sites
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://www.accuweather.com/">AccuWeather</a>
+            <a class="dropdown-item" href="https://weather.com/">The Weather Channel</a>
+            <a class="dropdown-item" href="https://www.wunderground.com/">Weather Underground</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container text-center login-div">
+
+    <h1 style="font-weight: bold;backdrop-filter: blur(10px);" class="text-center">Guess the Location!</h1>
+
+    <form class="login-form">
+
+      <input class="weathers-button" type="button" id="weather-submit" name="" value="New Game" onclick="newGame()">
+
+    </form>
+
+  </div>
+
+
+  <div class="container text-center guess-table-div">
+    <table id="guess-table">
+      <thead>
+        <h4 id="table-head">Guess a City!</h4>
+      </thead>
+    </table>
+  </div>
+
+
+  <div class="container weather-card-div" id="weather-container-random">
+
+  </div>
+
+  <script type="text/javascript" src="./scripts/guessScript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
