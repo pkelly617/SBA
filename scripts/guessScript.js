@@ -1,4 +1,4 @@
-const APIKEY = "a6a6f2d50f3f75022af768f3203eaf16";
+const APIKEY = "";
 let locations = new Array();
 let inputVal = "";
 const PLACES = ["Athens", "Barcelona", "Paris", "London", "Stockholm", "Boston", "Dallas", "Jacksonville", "New York", "Chicago", "Phoenix", "Detroit", "Tokyo", "Cape Town", "Mexico City", "Beijing"]
