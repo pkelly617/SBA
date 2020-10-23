@@ -2,7 +2,7 @@
 /** Peter Kelly         **/
 
 
-const APIKEY = "a6a6f2d50f3f75022af768f3203eaf16";
+const APIKEY = "";
 let locations = new Array();
 let regg = new RegExp(/^[a-zA-Z0-9_.-]*$/g);
 const EUROPE = ["Istanbul", "Athens", "Barcelona", "Moscow", "Paris", "London", "Dublin", "Berlin", "Rome", "Stockholm"];
